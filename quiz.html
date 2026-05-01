@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Skincare Quiz</title>
+    <meta name="description" content="Skincare website to help users build routines and learn about products">
+    <meta name="keywords" content="skincare, acne, routine, beauty">
+    <title>DermaCare Quiz</title>
     <link rel="stylesheet" href="skin.css">
 </head>
 <body>
@@ -13,50 +15,52 @@
             <a href="index.html">Home</a>
             <a href="quiz.html">Quiz</a>
             <a href="products.html">Products</a>
-            <a href="concerns.html">Concerns</a>
             <a href="ingredients.html">Ingredients</a>
             <a href="faq.html">FAQ</a>
     </nav>
      <main>
         <h2>Skincare Quiz</h2>
-        <p>Answer a few questions to get your personalized routine.</p>
-
+        <p>This quiz is designed to help you understand your skin and build a routine
+        that fits your needs. Your answers will guide you toward the best products
+        and ingredients.</p>
         <div class="quiz-container">
-            <form>
-                <label>1. What is your skin type?</label>
-                <select>
+            <form action="#">
+                <label for="skin">1. What is your skin type?</label>
+                <select id="skin" name="skin_type">
                     <option>Oily</option>
                     <option>Dry</option>
                     <option>Combination</option>
                     <option>Sensitive</option>
                 </select>
 
-                <label>2. What is your main concern?</label>
-                <select>
+                <label for="concern">2. What is your main concern?</label>
+                <select id="concern" name="concern">
                     <option>Acne</option>
                     <option>Dark Spots</option>
                     <option>Dryness</option>
                     <option>Aging</option>
                 </select>
 
-                <label>3. How sensitive is your skin?</label>
-                <select>
+                <label for="sensitivity">3. How sensitive is your skin?</label>
+                <select id="sensitivity" name="sensitivity">
                     <option>Not sensitive</option>
                     <option>Somewhat sensitive</option>
                     <option>Very sensitive</option>
                 </select>
 
-                <label>4. How complex do you want your routine?</label>
-                <select>
+                <label for="routine">4. How complex do you want your routine?</label>
+                <select id="routine" name="routine_level">
                     <option>Simple</option>
                     <option>Moderate</option>
                     <option>Full Routine</option>
                 </select>
-
                 <button type="submit">Get My Routine</button>
             </form>
         </div>
     </main>
+    <footer>
+        <small><i>Copyright&copy;2026 Skincare</i></small>
+    </footer>
 </body>
 </html>
 
